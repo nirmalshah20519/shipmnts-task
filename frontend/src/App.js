@@ -38,8 +38,6 @@ function App() {
   };
 
   const handleSaveToDB = () => {
-    // Functionality for saving data to the database goes here
-    // console.log(rows);
     setDbLoading(true)
     saveToDB(rows).then(resp=>{
       setIsRed(false);
