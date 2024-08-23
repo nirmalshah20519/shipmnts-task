@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar {
+    max-height: 600px;
+    /* Adjust the height as needed */
+    overflow: auto;
+    /* Scrollbar only appears when content overflows */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: thin;
+    /* Firefox */
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    width: 0.4em;
+    /* Reduced scrollbar width */
+  }
+
+  .no-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Optional: light background for the scrollbar track */
+    border-radius: 10px;
+    /* Rounded corners for track */
+  }
+
+  .no-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Thumb color with transparency */
+    border-radius: 10px;
+    /* Rounded corners for thumb */
+    border: 1px solid #ccc;
+    /* Optional: adds a border to the thumb for contrast */
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
