@@ -16,8 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // routers
-const router_customer = require("./routes/CompanyRoutes");
-app.use("/api", router_customer);
+const router_books = require("./routes/BooksRoutes");
+app.use("/api", router_books);
 
 
 const PORT = 5000;
