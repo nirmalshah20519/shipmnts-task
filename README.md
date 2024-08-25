@@ -53,6 +53,9 @@ npm start
 ### On success
 ![After Uploading](./images/p4.png)
 
+
+### Screen Recording video of the working app is available in images directory.
+
 <video width="320" height="240" controls>
   <source src="./images/vid.mp4" type="video/mp4">
   Your browser does not support the video tag.
